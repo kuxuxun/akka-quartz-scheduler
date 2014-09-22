@@ -20,3 +20,9 @@ libraryDependencies ++= Seq(
     "org.slf4j" % "slf4j-jcl" % "1.6.1" % "test",
     "org.scalatest" %% "scalatest" % "2.2.2" % "test"
 )
+
+
+
+publishTo := Some(Resolver.file("akka-quartz-scheduler",file("/modules/repository"))(Patterns(true, Resolver.mavenStyleBasePattern)))
+
+publishMavenStyle := true
